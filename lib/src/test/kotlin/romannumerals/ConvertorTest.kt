@@ -1,4 +1,4 @@
 package romannumerals
 
-class RomanNumeral {
+class ConvertorTest {
 }
