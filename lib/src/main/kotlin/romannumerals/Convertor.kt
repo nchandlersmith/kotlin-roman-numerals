@@ -36,7 +36,7 @@ class Convertor {
         if (numeral == "IV") {
             return 4
         }
-        return numeral.length
+        return numeral.fold(0) { acc: Int, _: Char -> acc + 1 }
     }
 
     data class Numeral(
