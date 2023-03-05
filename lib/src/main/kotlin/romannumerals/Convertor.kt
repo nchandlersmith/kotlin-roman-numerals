@@ -33,7 +33,7 @@ class Convertor {
     }
 
     fun toNumber(numeral: String): Int {
-        if (numeral.contentEquals("IV")) {
+        if (numeral == "IV") {
             return 4
         }
         return numeral.length
