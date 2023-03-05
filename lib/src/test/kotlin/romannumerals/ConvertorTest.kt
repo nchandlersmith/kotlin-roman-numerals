@@ -178,4 +178,28 @@ class ConvertorTest {
         val result = convertor.toNumeral(3999)
         assertThat(result).isEqualTo("MMMCMXCIX")
     }
+    @Test
+    fun givenToNumber_whenI_then1() {
+        val convertor = Convertor()
+        val result = convertor.toNumber("I")
+        assertThat(result).isEqualTo(1)
+    }
+    @Test
+    fun givenToNumber_whenII_then2() {
+        val convertor = Convertor()
+        val result = convertor.toNumber("II")
+        assertThat(result).isEqualTo(2)
+    }
+    @Test
+    fun givenToNumber_whenIII_then3() {
+        val convertor = Convertor()
+        val result = convertor.toNumber("III")
+        assertThat(result).isEqualTo(3)
+    }
+    @Test
+    fun givenToNumber_whenIV_then4() {
+        val convertor = Convertor()
+        val result = convertor.toNumber("IV")
+        assertThat(result).isEqualTo(4)
+    }
 }

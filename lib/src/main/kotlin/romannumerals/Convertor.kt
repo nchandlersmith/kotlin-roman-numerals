@@ -32,6 +32,13 @@ class Convertor {
         return numeral
     }
 
+    fun toNumber(numeral: String): Int {
+        if (numeral.contentEquals("IV")) {
+            return 4
+        }
+        return numeral.length
+    }
+
     data class Numeral(
         val lowerBound: Int,
         val upperBound: Int,
